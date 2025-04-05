@@ -1,0 +1,20 @@
+
+Pseudocode: Java Concurrency (Sequential Thread Execution)
+
+Start main method
+    Create first thread to count from 0 to 20
+    Start the first thread
+    Wait for the first thread to finish using join()
+    Create second thread to count from 20 to 0
+    Start the second thread
+End main method
+
+Define CountUpTask (Runnable)
+    Loop from 0 to 20
+        Print the current count
+        Pause briefly using Thread.sleep()
+
+Define CountDownTask (Runnable)
+    Loop from 20 to 0
+        Print the current count
+        Pause briefly using Thread.sleep()
